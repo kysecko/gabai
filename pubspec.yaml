@@ -1,0 +1,52 @@
+name: law_ai
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  heroicons: ^0.11.0
+  shared_preferences: ^2.5.6
+  flutter_gemini: ^3.0.0
+  openrouter_api: ^1.0.3
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/chat-add.svg
+    - assets/chat-add-active.svg
+    - assets/history.png
+    - assets/landing.png
+
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+        - asset: assets/fonts/Manrope-Bold.ttf
+          weight: 700
+    - family: Tapestry
+      fonts:
+        - asset: assets/fonts/Tapestry-Regular.ttf
+    - family: Rekalgera
+      fonts:
+        - asset: assets/fonts/Rekalgera-Regular.otf
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/logo_foreground.png"
